@@ -1,0 +1,91 @@
+body {
+  background-color: #fffb96;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-align: center;
+  margin: 20px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 40px);
+  background-image: url("./baddad.webp");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  min-width: 400px;
+  min-height: 500px;
+}
+
+.wrapper {
+  width: 50%;
+  max-width: 400px;
+  height: auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 350px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+h3 {
+  color: #ff5733;
+  text-shadow: 3px 3px 0px #ffcc29;
+  font-size: 24px;
+}
+
+.joke {
+  font-size: 18px;
+  font-weight: bold;
+  color: #5a189a;
+  margin: 10px;
+  padding: 15px;
+  background-color: #ffcc29;
+  border-radius: 10px;
+  display: inline-block;
+  animation: wiggle 1s infinite alternate;
+}
+
+.btn {
+  background-color: #33ccff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn:hover {
+  transform: rotate(-5deg) scale(1.1);
+  background-color: #ff33a6;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
